@@ -10,7 +10,7 @@
     "export": "next export",
     "deploy": "next build && next export && gh-pages -d out",
     "setup-scraper": "bash scraper/setup-env.sh",
-    "scrap": "bash -c 'source scraper/env/bin/activate && python3 scraper/scripts/data-scraper.py 2>&1 | tee scrap.log'"
+    "scrap": "bash -c 'source scraper/env/bin/activate && cd scraper && python3 scripts/data-scraper.py 2>&1 | tee scrap.log'"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
